@@ -15,6 +15,15 @@ public class Entries {
     private UUID id;
     private String title, result;
 
+    @Override
+    public String toString() {
+        return "Entries{" +
+                "id=" + id +
+                ", title='" + title +
+                ", result='" + result +
+                '}';
+    }
+
     public UUID getId() {
         return id;
     }

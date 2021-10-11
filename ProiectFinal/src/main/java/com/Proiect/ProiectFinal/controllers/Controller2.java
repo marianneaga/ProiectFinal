@@ -14,7 +14,7 @@ public class Controller2 {
     private EntriesRepository entriesRepository;
 
     @GetMapping("/home")
-    public String home1(Model model) {
+    public String home(Model model) {
         Iterable<Entries> entries = entriesRepository.findAll();
         model.addAttribute("entries", entries);
         return "home";
