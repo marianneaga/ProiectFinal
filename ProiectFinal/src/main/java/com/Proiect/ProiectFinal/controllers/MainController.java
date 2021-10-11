@@ -1,4 +1,4 @@
-package com.Proiect.ProiectFinal.Controllers;
+package com.Proiect.ProiectFinal.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
