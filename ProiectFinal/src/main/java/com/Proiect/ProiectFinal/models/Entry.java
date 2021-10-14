@@ -8,21 +8,12 @@ import javax.persistence.Id;
 import java.util.UUID;
 
 @Entity
-public class Entries {
+public class Entry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private String title, result;
-
-    @Override
-    public String toString() {
-        return "Entries{" +
-                "id=" + id +
-                ", title='" + title +
-                ", result='" + result +
-                '}';
-    }
 
     public UUID getId() {
         return id;

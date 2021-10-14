@@ -1,6 +1,6 @@
 package com.Proiect.ProiectFinal.controllers;
 
-import com.Proiect.ProiectFinal.models.Entries;
+import com.Proiect.ProiectFinal.models.Entry;
 import com.Proiect.ProiectFinal.repo.EntriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,9 +14,25 @@ public class Controller2 {
     private EntriesRepository entriesRepository;
 
     @GetMapping("/home")
-    public String home(Model model) {
-        Iterable<Entries> entries = entriesRepository.findAll();
+    public String Home(Model model) {
+        Entry entry = new Entry();
+        entry.setTitle("Hello");
+        entry.setResult("ABC");
+        entriesRepository.save(entry);
+        Iterable<Entry> entries = entriesRepository.findAll();
         model.addAttribute("entries", entries);
         return "home";
+    }
+
+    @GetMapping("/about")
+    public String About(Model model) {
+        model.addAttribute("title", "About");
+        return "about";
+    }
+
+    @GetMapping("/createaccount")
+    public String CreateAccount(Model model) {
+        model.addAttribute("title", "Create Account");
+        return "Create Account";
     }
 }
