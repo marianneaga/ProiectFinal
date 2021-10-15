@@ -1,4 +1,4 @@
-package com.Proiect.ProiectFinal.Form;
+package com.Proiect.ProiectFinal.CreateAccount;
 
 import com.vaadin.flow.component.HasValueAndElement;
 import com.vaadin.flow.component.button.Button;
@@ -35,7 +35,7 @@ public class RegistrationForm extends FormLayout {
             lastName = new TextField("Last name");
             email = new EmailField("Email");
 
-            password = new PasswordField("Password");
+            password = new PasswordField( "Password");
             passwordConfirm = new PasswordField("Confirm password");
 
             setRequiredIndicatorVisible(firstName, lastName, email, password,

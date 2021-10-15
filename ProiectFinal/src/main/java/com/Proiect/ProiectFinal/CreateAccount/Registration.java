@@ -1,12 +1,12 @@
-package com.Proiect.ProiectFinal.Form;
+package com.Proiect.ProiectFinal.CreateAccount;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 
-@Route("/register")
-public class CreateAccount extends VerticalLayout{
+@Route("/createaccount")
+public class Registration extends VerticalLayout{
 
-    public CreateAccount() {
+    public Registration() {
         RegistrationForm registrationForm = new RegistrationForm();
         // Center the RegistrationForm
         setHorizontalComponentAlignment(Alignment.CENTER, registrationForm);

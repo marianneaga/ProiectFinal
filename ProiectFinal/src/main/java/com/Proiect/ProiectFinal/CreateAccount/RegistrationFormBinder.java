@@ -1,4 +1,4 @@
-package com.Proiect.ProiectFinal.Form;
+package com.Proiect.ProiectFinal.CreateAccount;
 
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
@@ -11,9 +11,7 @@ public class RegistrationFormBinder {
 
     private RegistrationForm registrationForm;
 
-    /**
-     * Flag for disabling first run for password validation
-     */
+
     private boolean enablePasswordValidation;
 
     public RegistrationFormBinder(RegistrationForm registrationForm) {
