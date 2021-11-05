@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <title>Test Results</title>
+   <style type="text/css">
+    span {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+          }
+</style>
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+<div align="center">
+    <h2>Test Succeeded!</h2>
+    <span>Tencuială Interioară:</span><span th:text="${test.tencuialaInterioara}"></span><br/>
+    <span>Tencuială Exterioară:</span><span th:text="${test.tencuialaExterioara}"></span><br/>
+    <span>Zidărie de calcar:</span><span th:text="${test.zidarieDeCalcar}"></span><br/>
+    <span>Plăci de cheramzitobeton:</span><span th:text="${test.placiDeCheramzitobeton}"></span><br/>
+    <span>Perete din cărămidă plină:</span><span th:text="${test.pereteDinCaramidaPlina}"></span><br/>
+    <span>Perete cărămidă cu goluri:</span><span th:text="${test.pereteCaramidaCuGoluri}"></span><br/>
+    <span>Beton armat:</span><span th:text="${test.betonArmat}"></span><br/>
+    <span>Gazbeton:</span><span th:text="${test.gazbeton}"></span><br/>
+    <span>Bloc de beton:</span><span th:text="${test.blocDeBeton}"></span><br/>
+    <span>Piatra brut:</span><span th:text="${test.piatraBut}"></span><br/>
+    <span>Adeziv:</span><span th:text="${test.adeziv}"></span><br/>
+    <span>Result:</span><span th:text="${test.result}"></span><br/>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.Proiect.ProiectFinal.repo;
+package com.Proiect.ProiectFinal.repository;
 
 import com.Proiect.ProiectFinal.models.Entry;
 import org.springframework.data.repository.CrudRepository;

@@ -13,6 +13,9 @@ public class UserDetails {
     private String lastName;
 
     @NotBlank
+    private String username;
+
+    @NotBlank
     @Email
     private String email;
 
@@ -50,6 +53,12 @@ public class UserDetails {
     public void setPassword(String password) {
         this.password = password;
     }
+    public String getUsername() {
+        return username;
+    }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
 }

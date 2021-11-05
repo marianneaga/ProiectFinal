@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/button.css">
+    <title>New Test</title>
+
+
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+<div align="center">
+    <h1>New Test</h1>
+    <form action="#" th:action="@{/new_test}" method="post" th:object="${test}">
+        <label>Tencuială Interioară:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{tencuialaInterioara}" /><br/>
+
+        <label>Tencuială Exterioară:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{tencuialaExterioara}" /><br/>
+
+        <label>Zidărie de calcar:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{zidarieDeCalcar}" /><br/>
+
+        <label>Plăci de cheramzitobeton:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{placiDeCheramzitobeton}" /><br/>
+
+        <label>Perete din cărămidă plină:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{pereteDinCaramidaPlina}" /><br/>
+
+        <label>Perete cărămidă cu goluri:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{pereteCaramidaCuGoluri}" /><br/>
+
+        <label>Beton armat:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{betonArmat}" /><br/>
+
+        <label>Gazbeton:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{gazbeton}" /><br/>
+
+        <label>Bloc de beton:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{blocDeBeton}" /><br/>
+
+        <label>Piatra but:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{piatraBut}" /><br/>
+
+        <label>Adeziv:</label>
+        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{adeziv}" /><br/>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+
+
+    </form>
+</div>
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>

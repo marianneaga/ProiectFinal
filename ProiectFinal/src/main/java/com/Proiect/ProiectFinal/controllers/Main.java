@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-public class MainController {
+public class Main {
 
     @GetMapping("/")
     public String Welcome(Model model) {
