@@ -12,8 +12,8 @@
 
 <header th:insert="blocks/header :: header"></header>
 
-<div align="center">
-    <h1>New Test</h1>
+<div style="background-color:#FAFAD2;" align="center"><br><br>
+    <h1><em><small>New Test</small></em></h1><br><br>
     <form action="#" th:action="@{/new_test}" method="post" th:object="${test}">
         <label>Tencuială Interioară:</label>
         <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{tencuialaInterioara}" /><br/><br/>
