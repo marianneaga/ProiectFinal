@@ -1,4 +1,4 @@
-package com.Proiect.ProiectFinal.CreateAccount;
+package com.Proiect.ProiectFinal.models;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
