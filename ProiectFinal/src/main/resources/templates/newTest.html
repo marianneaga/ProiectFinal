@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/button.css">
+    <!--<link rel="stylesheet" href="CSS/button.css">-->
     <title>New Test</title>
 
 
@@ -16,40 +16,40 @@
     <h1>New Test</h1>
     <form action="#" th:action="@{/new_test}" method="post" th:object="${test}">
         <label>Tencuială Interioară:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{tencuialaInterioara}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{tencuialaInterioara}" /><br/><br/>
 
         <label>Tencuială Exterioară:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{tencuialaExterioara}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{tencuialaExterioara}" /><br/><br/>
 
         <label>Zidărie de calcar:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{zidarieDeCalcar}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{zidarieDeCalcar}" /><br/><br/>
 
         <label>Plăci de cheramzitobeton:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{placiDeCheramzitobeton}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{placiDeCheramzitobeton}" /><br/><br/>
 
         <label>Perete din cărămidă plină:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{pereteDinCaramidaPlina}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{pereteDinCaramidaPlina}" /><br/><br/>
 
         <label>Perete cărămidă cu goluri:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{pereteCaramidaCuGoluri}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{pereteCaramidaCuGoluri}" /><br/><br/>
 
         <label>Beton armat:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{betonArmat}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{betonArmat}" /><br/><br/>
 
         <label>Gazbeton:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{gazbeton}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{gazbeton}" /><br/><br/>
 
         <label>Bloc de beton:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{blocDeBeton}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{blocDeBeton}" /><br/><br/>
 
         <label>Piatra but:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{piatraBut}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{piatraBut}" /><br/><br/>
 
         <label>Adeziv:</label>
-        <input type="number" step="any" placeholder="Rezistența termică" th:field="*{adeziv}" /><br/>
+        <input type="number" step="any" placeholder="Grosimea stratului" th:field="*{adeziv}" /><br/><br/>
 
         <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="reset" class="btn btn-primary">Reset</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
 
 
     </form>

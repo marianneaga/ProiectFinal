@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
-public class Main {
+public class MainController {
 
     @GetMapping("/")
     public String Welcome(Model model) {
         model.addAttribute("title", "Welcome !");
-        return "welcome";
+        return "main_page";
     }
 }

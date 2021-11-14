@@ -9,8 +9,8 @@
 <header th:insert="blocks/header :: header"></header>
 
 <form action="C:\Users\marian.neaga\IdeaProjects\ProiectFinal\ProiectFinal\src\main\java\com\Proiect\ProiectFinal\CreateAccount\UserDetails.java"></form>
-<form action="servlet/Register" method="post">
-
+<form align="center" action="servlet/Register" method="post">
+    <h1> Registration</h1>
     First Name: <input type="text" name="userFirstName"><br><br>
     Last Name: <input type="text" name="userLastName"><br><br>
     User Name: <input type="text" name="userName"/><br/><br/>
@@ -25,8 +25,8 @@
         <option>Germany</option>
     </select>
     <br/><br/>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset Form" >
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
 
 </form>
 <div th:insert="blocks/footer :: footer"></div>

@@ -13,7 +13,7 @@ public class CreateAccount {
     @Autowired
     private EntriesRepository entriesRepository;
 
-    @GetMapping("/createaccount")
+    @GetMapping("/register")
     public String CreateAccount(Model model) {
         model.addAttribute("title", "Create Account");
         Entry entry = new Entry();
@@ -23,6 +23,6 @@ public class CreateAccount {
         Iterable<Entry> entries = entriesRepository.findAll();
         model.addAttribute("entries", entries);
 
-        return "createaccount";
+        return "create_account";
     }
 }
