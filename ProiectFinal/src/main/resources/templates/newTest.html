@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="CSS/button.css">-->
+    <link rel="stylesheet" th:href="@{/CSS/myStyle.CSS}">
     <title>New Test</title>
 
 
@@ -12,7 +12,7 @@
 
 <header th:insert="blocks/header :: header"></header>
 
-<div style="background-color:#FAFAD2;" align="center"><br><br>
+<div align="center"><br><br>
     <h1><em><small>New Test</small></em></h1><br><br>
     <form action="#" th:action="@{/new_test}" method="post" th:object="${test}">
         <label>Tencuială Interioară:</label>

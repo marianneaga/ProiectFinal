@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/CSS/myStyle.CSS}">
     <title>Test Results</title>
    <style type="text/css">
     span {
@@ -16,8 +17,8 @@
 
 <header th:insert="blocks/header :: header"></header>
 
-<div style="background-color:#FAFAD2;" align="center">
-    <h2>Test Succeeded!</h2>
+<div align="center"><br><br>
+    <h2><em><small>Test Succeeded!</small></em></h2><br><br>
     <span>Tencuială Interioară:</span><span th:text="${test.tencuialaInterioara}"></span><br/>
     <span>Tencuială Exterioară:</span><span th:text="${test.tencuialaExterioara}"></span><br/>
     <span>Zidărie de calcar:</span><span th:text="${test.zidarieDeCalcar}"></span><br/>
